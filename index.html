@@ -7,7 +7,19 @@
     <title>Alien Run</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onkeyup="key(event);" class="body">
+    <!--Start page-->
+    <div class="b" id="b">
+        <img src="images/Run (1).png" alt="charcter" class="charcter" id="character">
+        <img src="images/finish.gif" alt="" class="finish" id="finish">
+        <img src="images/Bird 1.png" alt="bird img" class="bird1" id="bird1">
+        <img src="images/Bird 1.png" alt="bird img" class="bird2" id="bird2">
+        <img src="images/Bird 1.png" alt="bird img" class="bird3" id="bird3">
+        <div class="mid">
+            <p class="score">Score : </p>
+            <p class="score2" id="score">0</p>
+        </div>
+    </div>
    <script src="script.js"></script> 
 </body>
 </html>
