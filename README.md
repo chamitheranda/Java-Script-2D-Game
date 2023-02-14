@@ -8,7 +8,7 @@ IT has seven animations .<br><br>
   &emsp;_2) Jump Animation_<br>
   &emsp;_3) Idle Animation_<br>
   &emsp;_4) Dead Animation_<br>
-  &emsp;_5) Background MOve Animation_<br>
+  &emsp;_5) Background Move Animation_<br>
   &emsp;_6) Flames Move animation_<br>
   &emsp;_7) Birds Fly Animation_<br><br>
 Also it has following sounds . <br><br>
