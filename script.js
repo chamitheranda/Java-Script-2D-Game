@@ -34,3 +34,16 @@ function b(){
     var bimg= document.getElementById("b").style.backgroundPositionX=t+"px";
     t -= 20;
 }
+var ml = 1000;
+//display flame
+function f(){
+    for(var y=0 ; y<10 ; y++){
+    var i = document.createElement("img");
+    i.src="images/flame.gif";   
+    i.style.marginLeft=ml+"px";
+    i.className="i";
+    i.id="a"+y;
+    ml +=1500;
+    document.getElementById("b").appendChild(i);
+   }
+} 
