@@ -140,3 +140,58 @@ var flyb = 0;
      jimg.src="images/Jump ("+j+").png";
      
  }
+
+ var mw = 0;
+var mlf =15000;
+//7.flame move animation
+function move(){
+    for(var l=0 ; l<10  ;){
+        
+        var d =document.getElementById("a"+l);
+        var z = getComputedStyle(d);// kisiyam tag ekakata compute welaa tiyena css filter kara mema function eken laba de 
+        var p = parseInt(z.marginLeft); //parseInt(700px -> 700)
+        p-= 40;
+        d.style.marginLeft=(p+"px");
+        if(p>-80 & p<100){
+           if(mt>300){
+            clearInterval(rw);rw = -1;
+            rs.pause();
+            clearInterval(bw);bw =-1;
+            clearInterval(mw);mw =-1;
+            clearInterval(sw);sw=-1;
+            clearInterval(jw);jw=-1;
+            clearInterval(flyb);
+            dw = setInterval(dead,100);
+            is.pause();
+            bs.pause();
+            ds.play();
+            
+           }
+        }   
+        if(l==9){
+            for(m=0 ; m<10; m++){
+                mlf-= 4 ;
+                document.getElementById("finish").style.visibility="visible";
+                document.getElementById("finish").style.marginLeft=mlf+"px";
+
+                var d =document.getElementById("finish");
+                var z = getComputedStyle(d);// kisiyam tag ekakata compute welaa tiyena css filter kara mema function eken laba de 
+                var p = parseInt(z.marginLeft);
+                if(p>-80 & p<100){
+                    clearInterval(rw);rw = -1;
+                    rs.pause();
+                    clearInterval(bw);bw =-1;
+                    clearInterval(mw);mw =-1;
+                    clearInterval(sw);sw=-1;
+                    clearInterval(jw);jw=-1;
+                    clearInterval(flyb);
+                    setTimeout(function(){document.getElementById("win").style.visibility="visible";document.getElementById("b").style.visibility="hidden"},10000);
+                    setInterval(startVideo,100);
+                    bs.pause();
+                    wins.play();
+                   
+                 }   
+            }
+        }     l++;   
+    }        
+}
