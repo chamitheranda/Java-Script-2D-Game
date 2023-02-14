@@ -205,3 +205,27 @@ function updateScore(){
 function re(){
     location.reload();
 }
+
+function start(){
+    document.getElementById("b").style.visibility="visible";
+    setInterval(idle,40);
+}
+
+function idleStart(){
+    iw=setInterval(idle,50);
+ }
+
+ function idleSound(){
+    is.play();
+ }
+ function clickPN(){
+    document.getElementById("b").style.visibility="visible";
+ }
+ function backSound(){
+    bs.play();
+ }
+ // play video
+function startVideo(){
+    var video =  document.getElementById("vid");
+    video.play();
+}
