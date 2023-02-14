@@ -100,3 +100,43 @@ var flyb = 0;
         bird=1;
     }
  }
+ var jw=0;
+ var j = 1;var mt =380;
+ 
+ //6.Jump animation
+ function jump(){
+     jimg = document.getElementById("character");
+     if(j<= 5){
+         mt-=40;
+         is.pause();
+     }
+     if(j>5){
+         mt+=40;
+         is.pause();
+     }
+     jimg.style.marginTop=mt+"px";
+     j++;
+     if(j==11){
+         j=1;
+         clearInterval(jw);
+         jw=0;
+         
+         rw=setInterval(run,100);
+         rs.play();
+         is.pause();
+         if(bw == 0){
+             bw=setInterval(b,100);
+         }
+         if(fid==0){
+             fid=f();
+         }
+         if(mw==0){
+             mw=setInterval(move,100);
+         }
+         if(sw==0){
+             sw=setInterval(updateScore,100);
+         }
+     }
+     jimg.src="images/Jump ("+j+").png";
+     
+ }
