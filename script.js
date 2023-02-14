@@ -47,3 +47,13 @@ function f(){
     document.getElementById("b").appendChild(i);
    }
 } 
+
+function finishGif(){  
+   
+    var finish = document.createElement("img");
+    i.src="images/finish.gif";   
+    i.style.marginLeft="300px";
+    i.className="finish";
+    i.id="finish";
+    document.getElementById("b").appendChild(i);  
+} 
