@@ -4,7 +4,7 @@ He go forward to find his friend once he find his friend he will win . <br>
 While run forward he should pass flames which come to him oterwise he will dead and should start the game from begining .<br>
 I used pure Java script , Html and CSS to implement this 2D Game .<br>
 IT has seven animations .<br>
-  _~~1) Run Animation_<br>
+  &ensp;_~~1) Run Animation~~_<br>
   _2) Jump Animation_<br>
   _3) Idle Animation_<br>
   _4) Dead Animation_<br>
