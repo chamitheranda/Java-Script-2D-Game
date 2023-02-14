@@ -1,3 +1,38 @@
+function key(event){
+    clearInterval(iw);
+    is.pause();
+    if(event.which==13){//enter
+        if(rw==0){
+            
+            fid = f();             
+            rw=setInterval(run,100); 
+            if(flyb==0){
+                flyb = setInterval(birdFly,200);
+            }
+            rs.play();
+            is.pause();
+            bw=setInterval(b,100);  
+            sw=setInterval(updateScore,100);
+            mw=setInterval(move,100);
+        }           
+    }
+    if(event.which==32){//space
+        if(dw == 0){
+            if(jw==0){
+                clearInterval(rw);
+                rs.pause();
+                rw=-1;
+                
+                jw=setInterval(jump,100);
+                if(flyb==0){
+                    flyb=setInterval(birdFly,200);
+                }
+                js.play();
+                is.pause();
+            }
+        }
+    }
+}
 // set up sounds
 rs = new Audio("sound/run.mp3");
 rs.loop=true;
