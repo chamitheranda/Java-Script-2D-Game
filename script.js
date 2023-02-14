@@ -195,3 +195,13 @@ function move(){
         }     l++;   
     }        
 }
+
+var sw = 0;
+var u = 0;
+function updateScore(){
+    u+=1;
+    document.getElementById("score").innerHTML=u;
+}
+function re(){
+    location.reload();
+}
