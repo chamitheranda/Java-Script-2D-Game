@@ -57,3 +57,46 @@ function finishGif(){
     i.id="finish";
     document.getElementById("b").appendChild(i);  
 } 
+var d=1;
+var dw = 0;
+//3. dead animation
+function dead(){
+    var dimg = document.getElementById("character");
+    d++;
+    if(d==11){
+        d=10;
+        dimg.style.marginTop="400px";
+        document.getElementById("end").style.visibility="visible";
+        document.getElementById("endscore").innerHTML=u;
+    }
+    dimg.src="images/Dead ("+d+").png";
+    
+}
+var idl = 1;
+var iw=0;
+// 4. Idle animation
+function idle(){
+    var idleimg = document.getElementById("character");
+    idleimg.src="images/Idle ("+idl+").png";
+    idl++;
+    if(idl==11){
+        idl = 1;
+    }
+  
+}
+
+var flyb = 0;
+ var bird=1;
+ //5. bird fly animation
+ function birdFly(){
+    birdimg= document.getElementById("bird1");
+    birdimg.src="images/Bird "+bird+".png";
+    birdimg= document.getElementById("bird2");
+    birdimg.src="images/Bird "+bird+".png";
+    birdimg= document.getElementById("bird3");
+    birdimg.src="images/Bird "+bird+".png";
+    bird++;
+    if(bird==7){
+        bird=1;
+    }
+ }
