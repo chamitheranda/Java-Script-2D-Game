@@ -7,7 +7,12 @@
     <title>Alien Run</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onkeyup="key(event);" class="body">
+<body onkeyup="key(event);" class="body" onload="idleStart();">
+    <!--Welcome page-->
+    <div class="start" id="start">
+        <img src="images/gamename.gif" alt="game name" class="name" id="name">
+        <button class="stbtn" id="stbtn" onclick="clickPN(),idleSound(),backSound();">Play Now</button>
+    </div>
     <!--Start page-->
     <div class="b" id="b">
         <img src="images/Run (1).png" alt="charcter" class="charcter" id="character">
